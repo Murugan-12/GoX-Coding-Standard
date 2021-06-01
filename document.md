@@ -176,16 +176,14 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
     - snake lower case
     #### camelCase
       - The name refers to the internal capital letters, which resemble the humps on a camel's back. 
-      
-      Example
+      - Example
         ```javascript
         let isLoggedIn = true;
         ```
         in javascript camelcase is preferred while naming variables and functions.
     #### snake_lower_case
       - snake_lower_case combines words by replacing each space with an underscore (_) and all the other letters are lower cased.
-      
-      Example
+      - Example
         ```python
         is_variable = True
         ```
@@ -193,17 +191,15 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
     #### PascalCase
       - PascalCase combines words by capitalizing all words (even the first word) and removing the space.
       - PascalCase is often used to name classes, constructors and namespaces in several languages.
-      
-      Example
-        ```java
-        LinkedList<String> nameList = new LinkedList<String>();
-        ```
+      - Example
+      ```java
+      LinkedList<String> nameList = new LinkedList<String>();
+      ```
       in java class and constructors should be in PascalCase.
     #### SNKAE_UPPER_CASE
       - SNKAE_UPPER_CASE combines words by replacing each space with an underscore (_) and all the other letters are upper cased.
       - It is used to name constants like **`PI` = 3.14`**.
-      
-      Example
+      - Example
         ```javascript
         const DAYS_IN_LEAP_YEAR = 366
         ```
