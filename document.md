@@ -1,6 +1,6 @@
 # Coding Conventions
 
-Coding conventions secure quality, code readabilty and make code maintanence easier.
+Coding conventions secure quality, code readability and make code maintenance easier.
 
 # Rules of JavaScript
 
@@ -42,7 +42,7 @@ exampleArr.forEach((arr1)=>{
       })
 ```
 
-Instead of reusing the code several times we can create a recusive function which could be more readable.
+Instead of reusing the code several times, we can create a recursive function that could be more readable.
 
 For example:
 
@@ -59,7 +59,7 @@ retrieveValue(exampleArr);
 
 ## 3.Stop writing comments
 
-It's a little bit subjective topic but when you write a program, which is self explanatory, the whole program will look clean and,
+It's a little bit subjective topic but when you write a program, which is self-explanatory, the whole program will look clean and,
 
 It will be really helpful for others to understand code as it improves readability.
 
@@ -82,8 +82,8 @@ const arithmeticOperations = (a, b, c) => {
 };
 ```
 
-In above example, we are calling a function we does mupltiple operations, as we took simple example the code looks easy to understand but,
-In real time projects we will be dealing with too many operations in that case we can allocate functions for each opeartion and call wherever we want.
+In the above example, we are calling a function that does multiple operations, as we took simple example the code looks easy to understand but,
+In real-time projects we will be dealing with too many operations in that case we can allocate functions for each operation and call wherever we want.
 
 For example:
 
@@ -99,25 +99,25 @@ const arithmeticOperations = (a,b,c) => {
 ## 5. Favor descriptive names over concise
 
 Always use make your identifiers self-explanatory
-Some good way to make the identifiers self - explanatory are
+Some good way to make the identifiers self-explanatory are
 
 ### Best practices to name variables
 
 - Name variables as nouns, since it's just a placeholder,
 
-  - Don't use some random names or single letter names as identifiers like ~~a~~ for something that holds a name of a person, instead give a name properly like **userName**
+  - Don't use some random names or single-letter names as identifiers like ~~a~~ for something that holds a name of a person, instead give a name properly like **userName**
 
     ```javascript
     const a = "johndoe"; // NEVER DO THIS
     ```
 
-    Instead do this
+    Instead, do this
 
     ```javascript
     const userName = "johndoe";
     ```
 
-  - Although single letter names are there is a special place where using a single letter names can be used and it is in for loop denoting the index
+  - Although single letter names are there is a special place where using a single letter name can be used and it is in for loop denoting the index
 
     >
 
@@ -129,7 +129,7 @@ Some good way to make the identifiers self - explanatory are
 
     single variables can be used in places where we inherently know the meaning of the variable since it's widely understood.
 
-  - Always name boolean names such that it is readable and describes that it has a boolean value like `isLoggedIn` , `isEnabled`, `hasToken` etc.
+  - Always name boolean names such that it is readable and describes that it has a boolean value like `isLoggedIn`, `isEnabled`, `hasToken` etc.
     - Because it makes the code more readable in places like conditional blocks
       >
     ```javascript
@@ -142,10 +142,10 @@ Some good way to make the identifiers self - explanatory are
 
 ### Best practices to name functions
 
-- Always name functions as verbs, since functions always does something
+- Always name functions as verbs, since functions always do something
 
   - Never give a noun as a name for functions.
-  - Function names has to be descriptive, meaning that it should describe itself for what it does like `getUserById` not like just ~~`getUser`~~.
+  - Function names have to be descriptive, meaning that it should describe itself for what it does like `getUserById` not like just ~~`getUser`~~.
 
     >
 
@@ -155,10 +155,10 @@ Some good way to make the identifiers self - explanatory are
     };
     ```
 
-  - Eventhough `getUser` is a verb, yet it isn't as descriptive as `getUserbyId`.
-  - Avoid too much descriptive names/ unneccessary names such as ~~`getUserByIdFromDatabase`~~, where `FromDatabse` could be avoided since everyone knows that data comes from database, hence it's redundant to mention in the name.
-  - As functions always does something, in particular to designing to `APIs` && `DBs`
-    a function always tries to do `create`, `update`, `delete`, `get` operations. In those cases it is always preferred to name functions prefixing with what the operation it tries to do like **`deleteAuthToken`**, **`getProductsByCountry`** etc.
+  - Even though `getUser` is a verb, yet it isn't as descriptive as `getUserbyId`.
+  - Avoid too many descriptive names/ unnecessary names such as ~~`getUserByIdFromDatabase`~~, where `FromDatabse` could be avoided since everyone knows that data comes from a database, hence it's redundant to mention in the name.
+  - As functions always do something, in particular to designing to `APIs` && `DBs`
+    a function always tries to do `create`, `update`, `delete`, `get` operations. In those cases, it is always preferred to name functions prefixing with what the operation it tries to do like **`deleteAuthToken`**, **`getProductsByCountry`**, etc.
 
     >
 
@@ -182,7 +182,7 @@ Some good way to make the identifiers self - explanatory are
 
 ### Casing in identifiers
 
-- For variables there are different options based on the language of your choice. They are
+- For variables, there are different options based on the language of your choice. They are
   - camelCase
   - snake lower case
   #### camelCase
@@ -191,9 +191,9 @@ Some good way to make the identifiers self - explanatory are
     ```javascript
     let isLoggedIn = true;
     ```
-    in javascript camelcase is preferred while naming variables and functions.
+    in javascript, camelcase is preferred while naming variables and functions.
   #### snake_lower_case
-  - snake*lower_case combines words by replacing each space with an underscore (*) and all the other letters are lower cased.
+  - snake*lower_case combines words by replacing each space with an underscore (*) and all the other letters are lowercased.
   - Example
     ```python
     is_variable = True
@@ -318,7 +318,7 @@ const setUserLoggedInTrue;
 
 #### Use Nouns for classNames :
 
-Classes don't take thing. They are Things.
+Classes don't take things. They are Things.
 
 ```javascript
 class Car = {
@@ -369,7 +369,7 @@ const today = new Date();
 
 #### Avoid one letter variable names :
 
-It is easy to forget what a one letter variable later in your code.
+It is easy to forget what a one-letter variable later in your code.
 So give proper understandable names for better readability.
 
 ```javascript
