@@ -15,17 +15,24 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
 ## 2.Deep Nesting
 
 >
-> const exampleArr = [ [ ['value'] ] ]  
+```javascript
+const exampleArr = [ [ ['value'] ] ]
+```  
 > To retrieve the value we will be doing nested for loops  
-> for example: exampleArr.forEach((arr1)=>{ arr1.foreach((arr2)=>{ arr2.foreach((element)=> return element ) }) })  
+> for example: 
+```javascript
+exampleArr.forEach((arr1)=>{ arr1.foreach((arr2)=>{ arr2.foreach((element)=> return element ) }) })
+```  
 >
 > Instead of reusing the code several times we can create a recusive function   
-> for example: const retrieveValue = (element) => {   
->   if(Array.isarray(element)){ retrieveValue(element) }  
->   return element  
-> }  
-> retrieveValue(exampleArr)
-
+> for example: 
+```javascript
+const retrieveValue = (element) => {   
+  if(Array.isarray(element)){ retrieveValue(element) }  
+   return element  
+ }  
+ retrieveValue(exampleArr)
+```
 
 ## 3.Stop writing comments
 
@@ -38,21 +45,25 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
 ## 4.Avoid large functions
 
 >
-> For example: const arithmeticOperations = (a,b,c) => {  
-> const addition = a + b + c;  
-> const subtraction = a - b - c;  
-> const multiplication = a * b * c;  
-> return { addition, subtraction, multiplication}  
-> }  
->
+> For example: 
+```javascript
+const arithmeticOperations = (a,b,c) => {  
+ const addition = a + b + c;  
+ const subtraction = a - b - c;  
+ const multiplication = a * b * c;  
+ return { addition, subtraction, multiplication}  
+ }  
+```
 > In above example we are calling a function we does mupltiple operations, as we took simple example the code looks easy to understand but
 > in real time projects we will be dealing with too many operations in that case we can allocate functions for each opeartion and call
 > wherever we want.
 >
-> For example: const arithmeticOperations = (a,b,c) => {  
-> return { addition(), subtraction(), multiplication()}  
-> }  
-> 
-> const addition = (a,b,c) => return {a + b + c};  
-> const subtraction = (a,b,c) => return {a - b - c};  
-> const multiplication = (a,b,c) => return {a * b * c};  
+For example: 
+```javascript const arithmeticOperations = (a,b,c) => {  
+return { addition(), subtraction(), multiplication()}  
+}  
+ 
+ const addition = (a,b,c) => return {a + b + c};  
+ const subtraction = (a,b,c) => return {a - b - c};  
+ const multiplication = (a,b,c) => return {a * b * c};  
+```
