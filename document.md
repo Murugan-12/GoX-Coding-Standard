@@ -32,6 +32,7 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
 >
 > Its a little bit subjective topic but when you write a program which is self explanatory, the whole program will look clean and 
 > it will be really helpful for others to understand code as it improves readability
+> 
 
 
 ## 4.Avoid large functions
