@@ -1,5 +1,5 @@
 # Coding Conventions
-Coding conventions secure quality, code readabilty and make code maintanence easier   
+Coding conventions secure quality, code readabilty and make code maintanence easier.   
 
 # Rules of JavaScript
 
