@@ -68,7 +68,7 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
 >
 >We have a lot of repeated code so it is much better to extract it to a separate function.
 >
-```
+```javascript
 exampleArray.forEach((arr1) => {
     arr1.forEach((arr2) => {
         arr2.forEach((el) => {
@@ -80,7 +80,7 @@ exampleArray.forEach((arr1) => {
 >
 >Instead of reusing the code several times, we can create a recursive function.
 >
-```
+```javascript
 const retrieveValue = (element) => {
     if(Array.isarray(element)){ retrieveValue(element) }
         return element
@@ -92,7 +92,7 @@ retrieveValue(exampleArr)
 >
 >For example:
 >
-```
+```javascript
 const getUserCredentials = (user) =>{
     const name = user.name;
     const surname = user.surname;
@@ -105,7 +105,7 @@ const getUserCredentials = (user) =>{
 >With es6 object destructuring we can do the following.
 >
 
-```
+```javascript
 const getUserCredentials = (user) =>{
     const { name, surname, password, email } = user;
 }
@@ -124,7 +124,7 @@ const getUserCredentials = (user) =>{
 >
 >For example:
 >
-```
+```javascript
 const camelCase = '';
 const thisIsARandomCamelCaseName;
 let getUserCredentials;
@@ -139,13 +139,13 @@ let getUserCredentials;
 >For example:
 >If you are fetching posts from some user we can give the variable name as,
 >
-```
+```javascript
 >const getUserData;
 ```
 >
 >But what data we are actually getting is the better way to name it.
 >
-```
+```javascript
 >const getUserPosts;
 ```
 >
@@ -157,7 +157,7 @@ let getUserCredentials;
 >
 >For example:
 >
-```
+```javascript
 >const findUserByNameOrEmail;
 >const setUserLoggedInTrue;
 ```
