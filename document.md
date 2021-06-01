@@ -52,6 +52,6 @@ Coding conventions secure quality, code readabilty and make code maintanence eas
 > return { addition(), subtraction(), multiplication()}
 > }
 > 
-> const addition = (a,b,c) => return {a + b + c};
-> const subtraction = (a,b,c) => return {a - b - c};
-> const multiplication = (a,b,c) => return {a * b * c};
+> const addition = (a,b,c) => return {a + b + c};  
+> const subtraction = (a,b,c) => return {a - b - c};  
+> const multiplication = (a,b,c) => return {a * b * c};  
